@@ -15,10 +15,14 @@ function showInfos(department){
 
 // Call
 
+//test(obj,arg1,arg2)
+
 showInfos.call(person1,"Software");
 showInfos.call(person2,"Development");
 
 // Apply
+
+//test(obj,[arg1,arg2])
 
 showInfos.apply(person1,["Software"]);
 showInfos.apply(person2,["Development"]);
