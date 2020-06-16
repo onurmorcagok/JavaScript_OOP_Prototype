@@ -18,7 +18,7 @@ function showInfos(department){
 showInfos.call(person1,"Software");
 showInfos.call(person2,"Development");
 
-// Bind
+// Apply
 
 showInfos.apply(person1,["Software"]);
 showInfos.apply(person2,["Development"]);
