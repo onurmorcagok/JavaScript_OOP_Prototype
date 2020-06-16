@@ -11,12 +11,22 @@ function Employee(name, age) {
     this.name = name;
     this.age = age;
 
-    this.toString = function() {
-        console.log("toString metodu Constructor içerisinden çağırıldı.");
-    }
+    // this.toString = function() {
+    //     console.log("toString metodu Constructor içerisinden çağırıldı.");
+    // }
 }
 
-const emp1 = new Employee("Onur",24);
-console.log(emp1);
+Employee.prototype.showInfos = function () {
+    console.log("Name: " + this.name + " Age: " + this.age);
+}
 
-console.log(emp1.toString()); // undefined degeri dönecektir.
+// const emp1 = new Employee("Onur",24);
+// console.log(emp1);
+
+// console.log(emp1.toString()); // undefined degeri dönecektir.
+
+const emp1 = new Employee("Onur", 24);
+const emp2 = new Employee("Umut", 23);
+
+console.log(emp1);
+console.log(emp2);
